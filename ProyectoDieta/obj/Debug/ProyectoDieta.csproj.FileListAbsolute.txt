@@ -1,1 +1,11 @@
 c:\users\ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.pdb
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\MaterialSkin.dll
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csprojResolveAssemblyReference.cache
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Form1.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.exe
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources

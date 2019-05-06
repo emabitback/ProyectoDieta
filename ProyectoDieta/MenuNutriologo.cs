@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoDieta
 {
-    public partial class Form1 : MaterialSkin.Controls.MaterialForm
+    public partial class MenuNutriologo : MaterialSkin.Controls.MaterialForm
     {
-        public Form1()
+        public MenuNutriologo()
         {
             InitializeComponent();
         }
 
-        private void materialFlatButton1_Click(object sender, EventArgs e)
+        private void MenuNutriologo_Load(object sender, EventArgs e)
         {
-            MenuNutriologo mn = new MenuNutriologo();
-            mn.Show();
+
         }
     }
 }
