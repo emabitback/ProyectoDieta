@@ -29,78 +29,77 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pacientesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alimentosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.menuStrip2);
-            this.panel1.Location = new System.Drawing.Point(75, 64);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Location = new System.Drawing.Point(240, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(487, 23);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(336, 36);
+            this.panel1.TabIndex = 0;
             // 
-            // menuStrip2
+            // menuStrip1
             // 
-            this.menuStrip2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(487, 24);
-            this.menuStrip2.TabIndex = 0;
-            this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pacientesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(336, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // menuToolStripMenuItem
+            // pacientesToolStripMenuItem
             // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pacientesToolStripMenuItem2,
-            this.alimentosToolStripMenuItem1});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.perrosToolStripMenuItem,
+            this.gatosToolStripMenuItem});
+            this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.pacientesToolStripMenuItem.Text = "Pacientes";
             // 
-            // pacientesToolStripMenuItem2
+            // perrosToolStripMenuItem
             // 
-            this.pacientesToolStripMenuItem2.Name = "pacientesToolStripMenuItem2";
-            this.pacientesToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.pacientesToolStripMenuItem2.Text = "Pacientes";
+            this.perrosToolStripMenuItem.Name = "perrosToolStripMenuItem";
+            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.perrosToolStripMenuItem.Text = "Paciente Nuevo";
+            this.perrosToolStripMenuItem.Click += new System.EventHandler(this.perrosToolStripMenuItem_Click);
             // 
-            // alimentosToolStripMenuItem1
+            // gatosToolStripMenuItem
             // 
-            this.alimentosToolStripMenuItem1.Name = "alimentosToolStripMenuItem1";
-            this.alimentosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.alimentosToolStripMenuItem1.Text = "Alimentos";
+            this.gatosToolStripMenuItem.Name = "gatosToolStripMenuItem";
+            this.gatosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.gatosToolStripMenuItem.Text = "Alimentos";
+            this.gatosToolStripMenuItem.Click += new System.EventHandler(this.gatosToolStripMenuItem_Click);
             // 
-            // panel2
+            // panelContainer
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 105);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(635, 339);
-            this.panel2.TabIndex = 3;
+            this.panelContainer.Location = new System.Drawing.Point(27, 106);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(815, 486);
+            this.panelContainer.TabIndex = 1;
             // 
             // MenuNutriologo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 444);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(874, 604);
+            this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
-            this.IsMdiContainer = true;
             this.Name = "MenuNutriologo";
             this.Text = "MenuNutriologo";
             this.Load += new System.EventHandler(this.MenuNutriologo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -108,10 +107,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem alimentosToolStripMenuItem1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gatosToolStripMenuItem;
+        private System.Windows.Forms.Panel panelContainer;
+
     }
 }

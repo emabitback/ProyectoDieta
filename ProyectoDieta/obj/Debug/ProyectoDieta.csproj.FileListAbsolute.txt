@@ -9,3 +9,5 @@ C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\o
 C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.exe
 C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
 C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.AltaPaciente.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Alimentos.resources

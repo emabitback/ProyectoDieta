@@ -21,5 +21,27 @@ namespace ProyectoDieta
         {
 
         }
+        private void OpenForm(object formHijo){
+            if (this.panelContainer.Controls.Count > 0)
+                this.panelContainer.Controls.RemoveAt(0);
+
+            Form fh=formHijo as Form;
+            fh.TopLevel =false;
+            fh.Dock=DockStyle.Fill;
+            this.panelContainer.Controls.Add(fh);
+            this.panelContainer.Tag=fh;
+            fh.Show();
+
+        }
+
+        private void perrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new AltaPaciente());
+        }
+
+        private void gatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Alimentos());
+        }
     }
 }
