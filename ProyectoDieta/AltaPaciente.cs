@@ -12,7 +12,8 @@ namespace ProyectoDieta
 {
     public partial class AltaPaciente : Form
     {
-        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=;database=nutrid; Allow User Variables=True";
+       // const string cadena_conexion = "server=localhost;port=3306;user id=root;password=;database=nutrid; Allow User Variables=True";
+        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=hack123;database=nutrid; Allow User Variables=True";
         public AltaPaciente()
         {
             InitializeComponent();
