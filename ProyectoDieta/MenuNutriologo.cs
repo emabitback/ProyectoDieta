@@ -15,10 +15,18 @@ namespace ProyectoDieta
         public MenuNutriologo()
         {
             InitializeComponent();
+            this.Closing += new CancelEventHandler(this.MenuNutriologo_Closing);
         }
 
         private void MenuNutriologo_Load(object sender, EventArgs e)
         {
+
+        }
+ 
+        private void MenuNutriologo_Closing(Object sender, CancelEventArgs e)
+        {
+            e.Cancel = false;
+            Application.Exit();
 
         }
         private void OpenForm(object formHijo){
@@ -41,7 +49,7 @@ namespace ProyectoDieta
 
         private void gatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenForm(new Alimentos());
+            OpenForm(new form());
         }
     }
 }

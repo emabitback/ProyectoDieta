@@ -41,9 +41,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(240, 64);
+            this.panel1.Location = new System.Drawing.Point(27, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(336, 36);
+            this.panel1.Size = new System.Drawing.Size(815, 36);
             this.panel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -52,7 +52,7 @@
             this.pacientesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(336, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(815, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 

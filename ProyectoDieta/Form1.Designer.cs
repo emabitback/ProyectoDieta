@@ -37,14 +37,14 @@
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "Nombre de Usuario";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(50, 88);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(109, 153);
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.PasswordChar = '\0';
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(176, 23);
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(186, 23);
             this.materialSingleLineTextField1.TabIndex = 0;
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
             // 
@@ -52,14 +52,14 @@
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "Contraseña";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(50, 126);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(109, 203);
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
             this.materialSingleLineTextField2.SelectedText = "";
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(176, 23);
+            this.materialSingleLineTextField2.Size = new System.Drawing.Size(186, 23);
             this.materialSingleLineTextField2.TabIndex = 1;
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
             // 
@@ -68,7 +68,7 @@
             this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(169, 188);
+            this.materialFlatButton1.Location = new System.Drawing.Point(218, 255);
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton1.MaximumSize = new System.Drawing.Size(100, 36);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(432, 426);
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialSingleLineTextField1);
