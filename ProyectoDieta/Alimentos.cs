@@ -54,26 +54,41 @@ namespace ProyectoDieta
             MySqlConnection conexion = new MySqlConnection();
             conexion.ConnectionString = cadena_conexion;
             string categoria_recibida;
+
+
             if (cmb_categoria.SelectedIndex == 0)
-                categoria_recibida = "frutas";
-            else if (cmb_categoria.SelectedIndex == 1)
-                categoria_recibida = "leguminosas";
-            else
-                categoria_recibida = "cereales";
-            MySqlCommand comd = new MySqlCommand("INSERT INTO comidas(id, comida, categoria) VALUES(DEFAULT, ?comida, ?categoria)", conexion);
-            comd.Parameters.AddWithValue("?comida", txt_comida.Text);
-            comd.Parameters.AddWithValue("?categoria", categoria_recibida);
-            try
             {
-                conexion.Open();
-                comd.ExecuteNonQuery();
-                conexion.Close();
-                llenarLista(list_frutas, "frutas");
-                llenarLista(list_leguminosas, "leguminosas");
-                llenarLista(list_cereales, "cereales");
-            } catch(Exception ex) {
-                MessageBox.Show("ERROR: " + ex);
+                MessageBox.Show("Selecciona una categororia");
             }
+            else
+            {
+
+
+                if (cmb_categoria.SelectedIndex == 1)
+                    categoria_recibida = "frutas";
+                else if (cmb_categoria.SelectedIndex == 2)
+                    categoria_recibida = "leguminosas";
+                else
+                    categoria_recibida = "cereales";
+                MySqlCommand comd = new MySqlCommand("INSERT INTO comidas(id, comida, categoria) VALUES(DEFAULT, ?comida, ?categoria)", conexion);
+                comd.Parameters.AddWithValue("?comida", txt_comida.Text);
+                comd.Parameters.AddWithValue("?categoria", categoria_recibida);
+                try
+                {
+                    conexion.Open();
+                    comd.ExecuteNonQuery();
+                    conexion.Close();
+                    llenarLista(list_frutas, "frutas");
+                    llenarLista(list_leguminosas, "leguminosas");
+                    llenarLista(list_cereales, "cereales");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ERROR: " + ex);
+                }
+            }
+            cmb_categoria.SelectedIndex = 0;
+            txt_comida.Clear();
            
         }
 
