@@ -34,8 +34,11 @@
             this.perrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,10 +84,22 @@
             // 
             // panelContainer
             // 
+            this.panelContainer.Controls.Add(this.pictureBox1);
             this.panelContainer.Location = new System.Drawing.Point(27, 106);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(815, 486);
             this.panelContainer.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoDieta.Properties.Resources._42789722_310615923092565_9096491333760246080_n1;
+            this.pictureBox1.Location = new System.Drawing.Point(72, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(669, 435);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MenuNutriologo
             // 
@@ -93,6 +108,7 @@
             this.ClientSize = new System.Drawing.Size(874, 604);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "MenuNutriologo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuNutriologo";
@@ -101,6 +117,8 @@
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panelContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -113,6 +131,7 @@
         private System.Windows.Forms.ToolStripMenuItem perrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatosToolStripMenuItem;
         private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

@@ -33,6 +33,9 @@ namespace ProyectoDieta
                 mp.Show();
             }
 
+            txt_nombreUsuario.Clear();
+            txt_contrasena.Clear();
+
            
         }
     }

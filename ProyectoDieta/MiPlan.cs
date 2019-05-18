@@ -19,7 +19,7 @@ namespace ProyectoDieta
 
         private void MiPlan_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

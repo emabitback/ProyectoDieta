@@ -33,12 +33,14 @@ namespace ProyectoDieta
 
         private void MenuPaciente_Load(object sender, EventArgs e)
         {
-
+            ImagenFondo.Visible = true;
         }
 
         private void miPToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ImagenFondo.Visible = false;
             OpenForm(new MiPlan());
+            
         }
     }
 }

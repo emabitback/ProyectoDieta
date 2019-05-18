@@ -34,8 +34,12 @@
             this.miPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.ImagenFondo = new System.Windows.Forms.PictureBox();
+            this.encabezado = new MaterialSkin.Controls.MaterialLabel();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panelContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenFondo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,10 +84,36 @@
             // 
             // panelContainer
             // 
+            this.panelContainer.Controls.Add(this.encabezado);
+            this.panelContainer.Controls.Add(this.ImagenFondo);
             this.panelContainer.Location = new System.Drawing.Point(27, 106);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(815, 486);
             this.panelContainer.TabIndex = 1;
+            // 
+            // ImagenFondo
+            // 
+            this.ImagenFondo.Image = global::ProyectoDieta.Properties.Resources.consejo;
+            this.ImagenFondo.Location = new System.Drawing.Point(135, 78);
+            this.ImagenFondo.Name = "ImagenFondo";
+            this.ImagenFondo.Size = new System.Drawing.Size(559, 351);
+            this.ImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImagenFondo.TabIndex = 0;
+            this.ImagenFondo.TabStop = false;
+            this.ImagenFondo.Visible = false;
+            // 
+            // encabezado
+            // 
+            this.encabezado.AutoSize = true;
+            this.encabezado.Depth = 0;
+            this.encabezado.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.encabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.encabezado.Location = new System.Drawing.Point(311, 22);
+            this.encabezado.MouseState = MaterialSkin.MouseState.HOVER;
+            this.encabezado.Name = "encabezado";
+            this.encabezado.Size = new System.Drawing.Size(145, 40);
+            this.encabezado.TabIndex = 1;
+            this.encabezado.Text = "Consejos";
             // 
             // MenuPaciente
             // 
@@ -93,6 +123,7 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MenuPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPaciente";
@@ -101,6 +132,9 @@
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panelContainer.ResumeLayout(false);
+            this.panelContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImagenFondo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -113,5 +147,7 @@
         private System.Windows.Forms.ToolStripMenuItem miPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.PictureBox ImagenFondo;
+        private MaterialSkin.Controls.MaterialLabel encabezado;
     }
 }

@@ -15,7 +15,7 @@ namespace ProyectoDieta
         public MenuNutriologo()
         {
             InitializeComponent();
-            this.Closing += new CancelEventHandler(this.MenuNutriologo_Closing);
+           // this.Closing += new CancelEventHandler(this.MenuNutriologo_Closing);
         }
 
         private void MenuNutriologo_Load(object sender, EventArgs e)
@@ -23,12 +23,13 @@ namespace ProyectoDieta
 
         }
  
-        private void MenuNutriologo_Closing(Object sender, CancelEventArgs e)
+     /*   private void MenuNutriologo_Closing(Object sender, CancelEventArgs e)
         {
             e.Cancel = false;
             Application.Exit();
 
         }
+      */
         private void OpenForm(object formHijo){
             if (this.panelContainer.Controls.Count > 0)
                 this.panelContainer.Controls.RemoveAt(0);
@@ -44,12 +45,19 @@ namespace ProyectoDieta
 
         private void perrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pictureBox1.Visible = false;
             OpenForm(new AltaPaciente());
         }
 
         private void gatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pictureBox1.Visible = false;
             OpenForm(new form());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
