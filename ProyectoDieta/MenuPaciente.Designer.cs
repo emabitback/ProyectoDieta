@@ -1,6 +1,6 @@
 ﻿namespace ProyectoDieta
 {
-    partial class MenuNutriologo
+    partial class MenuPaciente
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.perrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miDietaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -49,35 +49,34 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pacientesToolStripMenuItem});
+            this.miDietaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(815, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // pacientesToolStripMenuItem
+            // miDietaToolStripMenuItem
             // 
-            this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.perrosToolStripMenuItem,
-            this.gatosToolStripMenuItem});
-            this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.pacientesToolStripMenuItem.Text = "Pacientes";
+            this.miDietaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miPToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.miDietaToolStripMenuItem.Name = "miDietaToolStripMenuItem";
+            this.miDietaToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.miDietaToolStripMenuItem.Text = "Mi Dieta";
             // 
-            // perrosToolStripMenuItem
+            // miPToolStripMenuItem
             // 
-            this.perrosToolStripMenuItem.Name = "perrosToolStripMenuItem";
-            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.perrosToolStripMenuItem.Text = "Paciente Nuevo";
-            this.perrosToolStripMenuItem.Click += new System.EventHandler(this.perrosToolStripMenuItem_Click);
+            this.miPToolStripMenuItem.Name = "miPToolStripMenuItem";
+            this.miPToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.miPToolStripMenuItem.Text = "Mi Plan";
+            this.miPToolStripMenuItem.Click += new System.EventHandler(this.miPToolStripMenuItem_Click);
             // 
-            // gatosToolStripMenuItem
+            // salirToolStripMenuItem
             // 
-            this.gatosToolStripMenuItem.Name = "gatosToolStripMenuItem";
-            this.gatosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.gatosToolStripMenuItem.Text = "Alimentos";
-            this.gatosToolStripMenuItem.Click += new System.EventHandler(this.gatosToolStripMenuItem_Click);
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // panelContainer
             // 
@@ -86,17 +85,18 @@
             this.panelContainer.Size = new System.Drawing.Size(815, 486);
             this.panelContainer.TabIndex = 1;
             // 
-            // MenuNutriologo
+            // MenuPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 604);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
-            this.Name = "MenuNutriologo";
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "MenuPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuNutriologo";
-            this.Load += new System.EventHandler(this.MenuNutriologo_Load);
+            this.Text = "MenuPaciente";
+            this.Load += new System.EventHandler(this.MenuPaciente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -109,10 +109,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem perrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miDietaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Panel panelContainer;
-
     }
 }

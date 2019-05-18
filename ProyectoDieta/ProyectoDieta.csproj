@@ -75,6 +75,18 @@
     <Compile Include="MenuNutriologo.Designer.cs">
       <DependentUpon>MenuNutriologo.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPaciente.Designer.cs">
+      <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiPlan.Designer.cs">
+      <DependentUpon>MiPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alimentos.resx">
@@ -88,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuNutriologo.resx">
       <DependentUpon>MenuNutriologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPaciente.resx">
+      <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiPlan.resx">
+      <DependentUpon>MiPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

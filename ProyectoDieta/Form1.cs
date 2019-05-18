@@ -19,8 +19,21 @@ namespace ProyectoDieta
 
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
-            MenuNutriologo mn = new MenuNutriologo();
-            mn.Show();
+
+            if (txt_nombreUsuario.Text == "admin" && txt_contrasena.Text == "admin")
+            {
+                MenuNutriologo mn = new MenuNutriologo();
+                mn.Show();
+            }
+
+
+            if (txt_nombreUsuario.Text == "user" && txt_contrasena.Text == "user")
+            {
+                MenuPaciente mp = new MenuPaciente();
+                mp.Show();
+            }
+
+           
         }
     }
 }
