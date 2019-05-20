@@ -31,9 +31,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.perrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pacienteNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bajaPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pacienteModificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasIndividualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,24 +65,11 @@
             // 
             this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.perrosToolStripMenuItem,
-            this.gatosToolStripMenuItem});
+            this.gatosToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.pacientesToolStripMenuItem.Text = "Pacientes";
-            // 
-            // perrosToolStripMenuItem
-            // 
-            this.perrosToolStripMenuItem.Name = "perrosToolStripMenuItem";
-            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.perrosToolStripMenuItem.Text = "Paciente Nuevo";
-            this.perrosToolStripMenuItem.Click += new System.EventHandler(this.perrosToolStripMenuItem_Click);
-            // 
-            // gatosToolStripMenuItem
-            // 
-            this.gatosToolStripMenuItem.Name = "gatosToolStripMenuItem";
-            this.gatosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.gatosToolStripMenuItem.Text = "Alimentos";
-            this.gatosToolStripMenuItem.Click += new System.EventHandler(this.gatosToolStripMenuItem_Click);
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.pacientesToolStripMenuItem.Text = "Menu";
             // 
             // panelContainer
             // 
@@ -85,6 +77,61 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(815, 486);
             this.panelContainer.TabIndex = 1;
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Image = global::ProyectoDieta.Properties.Resources.x;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // perrosToolStripMenuItem
+            // 
+            this.perrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pacienteNuevoToolStripMenuItem,
+            this.bajaPacienteToolStripMenuItem,
+            this.pacienteModificarToolStripMenuItem,
+            this.consultasIndividualToolStripMenuItem});
+            this.perrosToolStripMenuItem.Image = global::ProyectoDieta.Properties.Resources.pa;
+            this.perrosToolStripMenuItem.Name = "perrosToolStripMenuItem";
+            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.perrosToolStripMenuItem.Text = "Paciente";
+            this.perrosToolStripMenuItem.Click += new System.EventHandler(this.perrosToolStripMenuItem_Click);
+            // 
+            // pacienteNuevoToolStripMenuItem
+            // 
+            this.pacienteNuevoToolStripMenuItem.Name = "pacienteNuevoToolStripMenuItem";
+            this.pacienteNuevoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.pacienteNuevoToolStripMenuItem.Text = "Paciente Nuevo";
+            this.pacienteNuevoToolStripMenuItem.Click += new System.EventHandler(this.pacienteNuevoToolStripMenuItem_Click);
+            // 
+            // bajaPacienteToolStripMenuItem
+            // 
+            this.bajaPacienteToolStripMenuItem.Name = "bajaPacienteToolStripMenuItem";
+            this.bajaPacienteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.bajaPacienteToolStripMenuItem.Text = "Baja Paciente";
+            // 
+            // pacienteModificarToolStripMenuItem
+            // 
+            this.pacienteModificarToolStripMenuItem.Name = "pacienteModificarToolStripMenuItem";
+            this.pacienteModificarToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.pacienteModificarToolStripMenuItem.Text = "Paciente Modificar";
+            // 
+            // consultasIndividualToolStripMenuItem
+            // 
+            this.consultasIndividualToolStripMenuItem.Name = "consultasIndividualToolStripMenuItem";
+            this.consultasIndividualToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.consultasIndividualToolStripMenuItem.Text = "Consultar Paciente";
+            this.consultasIndividualToolStripMenuItem.Click += new System.EventHandler(this.consultasIndividualToolStripMenuItem_Click);
+            // 
+            // gatosToolStripMenuItem
+            // 
+            this.gatosToolStripMenuItem.Image = global::ProyectoDieta.Properties.Resources.alimentos;
+            this.gatosToolStripMenuItem.Name = "gatosToolStripMenuItem";
+            this.gatosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gatosToolStripMenuItem.Text = "Alimentos";
+            this.gatosToolStripMenuItem.Click += new System.EventHandler(this.gatosToolStripMenuItem_Click);
             // 
             // MenuNutriologo
             // 
@@ -112,6 +159,11 @@
         private System.Windows.Forms.ToolStripMenuItem perrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatosToolStripMenuItem;
         private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.ToolStripMenuItem consultasIndividualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pacienteNuevoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bajaPacienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pacienteModificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
 
     }
 }

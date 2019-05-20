@@ -13,7 +13,8 @@ namespace ProyectoDieta
     public partial class AltaPaciente : Form
     {
        // const string cadena_conexion = "server=localhost;port=3306;user id=root;password=;database=nutrid; Allow User Variables=True";
-        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=hack123;database=nutrid; Allow User Variables=True";
+       // const string cadena_conexion = "server=localhost;port=3306;user id=root;password=hack123;database=nutrid; Allow User Variables=True";
+        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=devayper360;database=nutrid; Allow User Variables=True";
         public AltaPaciente()
         {
             InitializeComponent();
@@ -78,6 +79,25 @@ namespace ProyectoDieta
             {
                 MessageBox.Show(ex + ".");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            txt_psw.Clear();
+            textBox1.Clear();
+            txt_correo.Clear();
+            txt_nombre.Clear();
+            txt_apep.Clear();
+            txt_apem.Clear();
+            txt_telefono.Clear();
+            txt_nacimiento.Clear();
+            txt_direccion.Clear();
+               // comd.Parameters.AddWithValue("?sexo", sexo);
+            txt_peso.Clear();
+            txt_altura.Clear();
+            txt_alergias.Clear();
+
         }
     }
 }

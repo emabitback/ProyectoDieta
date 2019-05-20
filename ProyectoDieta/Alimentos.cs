@@ -13,7 +13,8 @@ namespace ProyectoDieta
     public partial class form : Form
     {
        // const string cadena_conexion = "server=localhost;port=3306;user id=root;password=;database=nutrid; Allow User Variables=True";
-        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=hack123;database=nutrid; Allow User Variables=True";
+     //   const string cadena_conexion = "server=localhost;port=3306;user id=root;password=hack123;database=nutrid; Allow User Variables=True";
+        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=devayper360;database=nutrid; Allow User Variables=True";
          
         public form()
         {

@@ -31,6 +31,7 @@
             this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // materialSingleLineTextField1
@@ -80,11 +81,24 @@
             this.materialFlatButton1.UseVisualStyleBackColor = true;
             this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel1.Location = new System.Drawing.Point(123, 351);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(151, 15);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Recuperar Contraseña";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 426);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialSingleLineTextField1);
@@ -103,6 +117,7 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
 
     }
 }

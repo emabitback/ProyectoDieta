@@ -44,12 +44,27 @@ namespace ProyectoDieta
 
         private void perrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenForm(new AltaPaciente());
+           
         }
 
         private void gatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenForm(new form());
+        }
+
+        private void pacienteNuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new AltaPaciente());
+        }
+
+        private void consultasIndividualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

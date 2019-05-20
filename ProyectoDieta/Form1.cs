@@ -21,6 +21,7 @@ namespace ProyectoDieta
         {
             MenuNutriologo mn = new MenuNutriologo();
             mn.Show();
+            this.Hide();
         }
     }
 }
