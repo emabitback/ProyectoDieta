@@ -76,6 +76,18 @@
     <Compile Include="MenuNutriologo.Designer.cs">
       <DependentUpon>MenuNutriologo.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPaciente.Designer.cs">
+      <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiPlan.Designer.cs">
+      <DependentUpon>MiPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alimentos.resx">
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuNutriologo.resx">
       <DependentUpon>MenuNutriologo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPaciente.resx">
+      <DependentUpon>MenuPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiPlan.resx">
+      <DependentUpon>MiPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +133,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\pa.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +141,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\x.jpg" />
+=======
+    <None Include="Resources\consejo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutriologo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42789722_310615923092565_9096491333760246080_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42789722_310615923092565_9096491333760246080_n1.jpg" />
+>>>>>>> c9059d58486e9e5c4984d9726c76329bb5312c88
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

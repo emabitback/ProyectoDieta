@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txt_nombreUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txt_contrasena = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // materialSingleLineTextField1
+            // txt_nombreUsuario
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "Nombre de Usuario";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(109, 153);
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(186, 23);
-            this.materialSingleLineTextField1.TabIndex = 0;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.txt_nombreUsuario.Depth = 0;
+            this.txt_nombreUsuario.Hint = "Nombre de Usuario";
+            this.txt_nombreUsuario.Location = new System.Drawing.Point(109, 153);
+            this.txt_nombreUsuario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_nombreUsuario.Name = "txt_nombreUsuario";
+            this.txt_nombreUsuario.PasswordChar = '\0';
+            this.txt_nombreUsuario.SelectedText = "";
+            this.txt_nombreUsuario.SelectionLength = 0;
+            this.txt_nombreUsuario.SelectionStart = 0;
+            this.txt_nombreUsuario.Size = new System.Drawing.Size(186, 23);
+            this.txt_nombreUsuario.TabIndex = 0;
+            this.txt_nombreUsuario.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField2
+            // txt_contrasena
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "Contraseña";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(109, 203);
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(186, 23);
-            this.materialSingleLineTextField2.TabIndex = 1;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.txt_contrasena.Depth = 0;
+            this.txt_contrasena.Hint = "Contraseña";
+            this.txt_contrasena.Location = new System.Drawing.Point(109, 203);
+            this.txt_contrasena.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_contrasena.Name = "txt_contrasena";
+            this.txt_contrasena.PasswordChar = '\0';
+            this.txt_contrasena.SelectedText = "";
+            this.txt_contrasena.SelectionLength = 0;
+            this.txt_contrasena.SelectionStart = 0;
+            this.txt_contrasena.Size = new System.Drawing.Size(186, 23);
+            this.txt_contrasena.TabIndex = 1;
+            this.txt_contrasena.UseSystemPasswordChar = false;
             // 
             // materialFlatButton1
             // 
@@ -100,8 +100,8 @@
             this.ClientSize = new System.Drawing.Size(432, 426);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.materialFlatButton1);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.txt_contrasena);
+            this.Controls.Add(this.txt_nombreUsuario);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -114,8 +114,8 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_nombreUsuario;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_contrasena;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private System.Windows.Forms.LinkLabel linkLabel1;
 

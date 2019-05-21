@@ -63,9 +63,15 @@ namespace ProyectoDieta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap alimentos {
             get {
                 object obj = ResourceManager.GetObject("alimentos", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap _42789722_310615923092565_9096491333760246080_n {
+            get {
+                object obj = ResourceManager.GetObject("42789722_310615923092565_9096491333760246080_n", resourceCulture);
+>>>>>>> c9059d58486e9e5c4984d9726c76329bb5312c88
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +79,15 @@ namespace ProyectoDieta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap pa {
             get {
                 object obj = ResourceManager.GetObject("pa", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap _42789722_310615923092565_9096491333760246080_n1 {
+            get {
+                object obj = ResourceManager.GetObject("42789722_310615923092565_9096491333760246080_n1", resourceCulture);
+>>>>>>> c9059d58486e9e5c4984d9726c76329bb5312c88
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +95,25 @@ namespace ProyectoDieta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap x {
             get {
                 object obj = ResourceManager.GetObject("x", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap consejo {
+            get {
+                object obj = ResourceManager.GetObject("consejo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nutriologo {
+            get {
+                object obj = ResourceManager.GetObject("nutriologo", resourceCulture);
+>>>>>>> c9059d58486e9e5c4984d9726c76329bb5312c88
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

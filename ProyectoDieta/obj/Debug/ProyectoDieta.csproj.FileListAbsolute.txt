@@ -24,6 +24,7 @@ C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDie
 C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
 C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\MySql.Data.dll
 C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
+<<<<<<< HEAD
 C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
 C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.exe
 C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
@@ -38,3 +39,7 @@ C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\
 C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
 C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
 C:\Users\USER\Documents\Visual Studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+=======
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuPaciente.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MiPlan.resources
+>>>>>>> c9059d58486e9e5c4984d9726c76329bb5312c88
