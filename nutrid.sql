@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 14-05-2019 a las 08:53:13
+-- Tiempo de generación: 22-05-2019 a las 23:39:04
 -- Versión del servidor: 5.7.24
 -- Versión de PHP: 7.2.14
 
@@ -34,14 +34,14 @@ CREATE TABLE IF NOT EXISTS `comidas` (
   `comida` varchar(50) NOT NULL,
   `categoria` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `comidas`
 --
 
 INSERT INTO `comidas` (`id`, `comida`, `categoria`) VALUES
-(1, 'frutas', 'fruta del dragón'),
+(1, 'frutas secaas', 'frutas'),
 (2, 'fruta del pan', 'frutas'),
 (13, 'plátano', 'frutas'),
 (4, 'frijoles', 'leguminosas'),
@@ -52,7 +52,46 @@ INSERT INTO `comidas` (`id`, `comida`, `categoria`) VALUES
 (9, 'ser', 'leguminosas'),
 (10, 'manzana', 'frutas'),
 (11, 'res', 'leguminosas'),
-(12, 'granola', 'cereales');
+(12, 'granola', 'cereales'),
+(14, 'atún', 'leguminosas');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `dieta`
+--
+
+DROP TABLE IF EXISTS `dieta`;
+CREATE TABLE IF NOT EXISTS `dieta` (
+  `correo` varchar(70) NOT NULL,
+  `dia` varchar(70) NOT NULL,
+  `comida` varchar(70) NOT NULL,
+  PRIMARY KEY (`correo`,`dia`,`comida`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `dieta`
+--
+
+INSERT INTO `dieta` (`correo`, `dia`, `comida`) VALUES
+('ddanielhdz@gmail.com', 'Jueves', 'frijoles'),
+('ddanielhdz@gmail.com', 'Jueves', 'frutas secaas'),
+('ddanielhdz@gmail.com', 'Jueves', 'ser'),
+('ddanielhdz@gmail.com', 'Lunes', 'fruta del pan'),
+('ddanielhdz@gmail.com', 'Lunes', 'frutas secaas'),
+('ddanielhdz@gmail.com', 'Martes', ''),
+('ddanielhdz@gmail.com', 'Martes', 'frijoles'),
+('ddanielhdz@gmail.com', 'Martes', 'ser'),
+('valv', 'Jueves', 'res'),
+('valv', 'Lunes', 'frijoles'),
+('valv', 'Lunes', 'ser'),
+('valv', 'Martes', 'ser'),
+('valv', 'Miércoles', 'res'),
+('valv', 'Sábado', 'frijoles'),
+('valv', 'Sábado', 'frutas secaas'),
+('valv', 'Viernes', 'atún'),
+('valv', 'Viernes', 'frutas secaas'),
+('valv', 'Viernes', 'res');
 
 -- --------------------------------------------------------
 
@@ -83,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `usrs_data` (
 INSERT INTO `usrs_data` (`correo`, `nombre`, `apep`, `apem`, `telefono`, `nacimiento`, `direccion`, `sexo`, `peso`, `altura`, `alergias`) VALUES
 ('derefer@fere', 'fffafa', 'fifi', 'val', '23232', '1222', 'aca', 'Masculino', 12, '12', '34'),
 ('valv', 'brah', 'va', 'va', '3232', '1111', 'aca', 'Masculino', 122, '12', '12'),
-('ddanielhdz@gmail.com', 'abraham', 'valverde', 'hernandez', '7778989', '1990', 'Calle Galaxias No. 19', 'Masculino', 78, '2', 'Ninguna');
+('ddanielhdz@gmail.com', 'alisson', 'valverde', 'hernandez', '7778989', '1990', 'Calle Galaxias No. 19', 'Femenino', 70, '78', '2');
 
 -- --------------------------------------------------------
 
@@ -108,7 +147,8 @@ CREATE TABLE IF NOT EXISTS `usrs_login` (
 INSERT INTO `usrs_login` (`correo`, `psw`, `rol`, `pregunta`, `respuesta`) VALUES
 ('valv', 0x08b65b1fd1a73c82d8965d26e4e60d3a, 'USR', '¿Cuál fue tu primer número?', '123'),
 ('ddanielhdz@gmail.com', 0xdb4dc03e610f09ec35502c6cfb082748, 'USR', '¿Cuál fue tu primer número?', 'Respuesta'),
-('derefer@fere', 0xe55856ad234989761cf85ec2ada9144d, 'USR', '¿Cuál fue tu primer número?', '123');
+('derefer@fere', 0xe55856ad234989761cf85ec2ada9144d, 'USR', '¿Cuál fue tu primer número?', '123'),
+('jarek@mail.com', 0x6c3f65c7e937f2f968236baa9c590b55, 'ADM', 'Comida favorita', 'frijoles');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
