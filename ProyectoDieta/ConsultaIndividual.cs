@@ -97,7 +97,6 @@ namespace ProyectoDieta
             else
                 sexo = "Femenino";
             //obteniendo la pregunta elegida desde el formulario
-            string pregunta;
             try
             {
                
@@ -123,6 +122,11 @@ namespace ProyectoDieta
             {
                 MessageBox.Show(ex + ".");
             }
+        }
+
+        private void cmb_correos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

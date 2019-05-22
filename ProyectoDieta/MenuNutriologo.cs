@@ -74,5 +74,11 @@ namespace ProyectoDieta
             pictureBox1.Visible = false;
             OpenForm(new ConsultaIndividual());
         }
+
+        private void planAlimenticioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
+            OpenForm(new RegistrarDietacs());
+        }
     }
 }

@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_nombreUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txt_contrasena = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txt_correo = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txt_pws = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btn_recuperar = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
-            // txt_nombreUsuario
+            // txt_correo
             // 
-            this.txt_nombreUsuario.Depth = 0;
-            this.txt_nombreUsuario.Hint = "Nombre de Usuario";
-            this.txt_nombreUsuario.Location = new System.Drawing.Point(109, 153);
-            this.txt_nombreUsuario.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txt_nombreUsuario.Name = "txt_nombreUsuario";
-            this.txt_nombreUsuario.PasswordChar = '\0';
-            this.txt_nombreUsuario.SelectedText = "";
-            this.txt_nombreUsuario.SelectionLength = 0;
-            this.txt_nombreUsuario.SelectionStart = 0;
-            this.txt_nombreUsuario.Size = new System.Drawing.Size(186, 23);
-            this.txt_nombreUsuario.TabIndex = 0;
-            this.txt_nombreUsuario.UseSystemPasswordChar = false;
+            this.txt_correo.Depth = 0;
+            this.txt_correo.Hint = "Correo electrónico";
+            this.txt_correo.Location = new System.Drawing.Point(111, 134);
+            this.txt_correo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_correo.Name = "txt_correo";
+            this.txt_correo.PasswordChar = '\0';
+            this.txt_correo.SelectedText = "";
+            this.txt_correo.SelectionLength = 0;
+            this.txt_correo.SelectionStart = 0;
+            this.txt_correo.Size = new System.Drawing.Size(200, 23);
+            this.txt_correo.TabIndex = 0;
+            this.txt_correo.UseSystemPasswordChar = false;
             // 
-            // txt_contrasena
+            // txt_pws
             // 
-            this.txt_contrasena.Depth = 0;
-            this.txt_contrasena.Hint = "Contraseña";
-            this.txt_contrasena.Location = new System.Drawing.Point(109, 203);
-            this.txt_contrasena.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txt_contrasena.Name = "txt_contrasena";
-            this.txt_contrasena.PasswordChar = '\0';
-            this.txt_contrasena.SelectedText = "";
-            this.txt_contrasena.SelectionLength = 0;
-            this.txt_contrasena.SelectionStart = 0;
-            this.txt_contrasena.Size = new System.Drawing.Size(186, 23);
-            this.txt_contrasena.TabIndex = 1;
-            this.txt_contrasena.UseSystemPasswordChar = false;
+            this.txt_pws.Depth = 0;
+            this.txt_pws.Hint = "Contraseña";
+            this.txt_pws.Location = new System.Drawing.Point(111, 184);
+            this.txt_pws.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_pws.Name = "txt_pws";
+            this.txt_pws.PasswordChar = '*';
+            this.txt_pws.SelectedText = "";
+            this.txt_pws.SelectionLength = 0;
+            this.txt_pws.SelectionStart = 0;
+            this.txt_pws.Size = new System.Drawing.Size(200, 23);
+            this.txt_pws.TabIndex = 1;
+            this.txt_pws.UseSystemPasswordChar = false;
             // 
             // materialFlatButton1
             // 
             this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(218, 255);
+            this.materialFlatButton1.Location = new System.Drawing.Point(111, 239);
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton1.MaximumSize = new System.Drawing.Size(100, 36);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -80,19 +81,37 @@
             this.materialFlatButton1.UseVisualStyleBackColor = true;
             this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
+            // btn_recuperar
+            // 
+            this.btn_recuperar.AutoSize = true;
+            this.btn_recuperar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_recuperar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_recuperar.Depth = 0;
+            this.btn_recuperar.Location = new System.Drawing.Point(222, 239);
+            this.btn_recuperar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_recuperar.MaximumSize = new System.Drawing.Size(100, 36);
+            this.btn_recuperar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_recuperar.Name = "btn_recuperar";
+            this.btn_recuperar.Primary = false;
+            this.btn_recuperar.Size = new System.Drawing.Size(89, 36);
+            this.btn_recuperar.TabIndex = 3;
+            this.btn_recuperar.Text = "Recuperar";
+            this.btn_recuperar.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 426);
+            this.ClientSize = new System.Drawing.Size(432, 417);
+            this.Controls.Add(this.btn_recuperar);
             this.Controls.Add(this.materialFlatButton1);
-            this.Controls.Add(this.txt_contrasena);
-            this.Controls.Add(this.txt_nombreUsuario);
+            this.Controls.Add(this.txt_pws);
+            this.Controls.Add(this.txt_correo);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema";
+            this.Text = "Inicio de sesión";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,9 +119,10 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialSingleLineTextField txt_nombreUsuario;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txt_contrasena;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_correo;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_pws;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private MaterialSkin.Controls.MaterialFlatButton btn_recuperar;
 
     }
 }

@@ -87,6 +87,7 @@
             this.cmb_correos.Name = "cmb_correos";
             this.cmb_correos.Size = new System.Drawing.Size(267, 28);
             this.cmb_correos.TabIndex = 28;
+            this.cmb_correos.SelectedIndexChanged += new System.EventHandler(this.cmb_correos_SelectedIndexChanged);
             // 
             // txt_apem
             // 

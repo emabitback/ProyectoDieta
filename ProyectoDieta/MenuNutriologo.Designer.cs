@@ -33,10 +33,11 @@
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.alimentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.consultaIndividualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alimentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planAlimenticioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelContainer.SuspendLayout();
@@ -55,7 +56,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pacientesToolStripMenuItem,
-            this.alimentosToolStripMenuItem});
+            this.alimentosToolStripMenuItem,
+            this.planAlimenticioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(815, 24);
@@ -86,13 +88,12 @@
             this.gatosToolStripMenuItem.Text = "Listado de pacientes";
             this.gatosToolStripMenuItem.Click += new System.EventHandler(this.gatosToolStripMenuItem_Click);
             // 
-            // panelContainer
+            // consultaIndividualToolStripMenuItem
             // 
-            this.panelContainer.Controls.Add(this.pictureBox1);
-            this.panelContainer.Location = new System.Drawing.Point(27, 106);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(815, 486);
-            this.panelContainer.TabIndex = 1;
+            this.consultaIndividualToolStripMenuItem.Name = "consultaIndividualToolStripMenuItem";
+            this.consultaIndividualToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.consultaIndividualToolStripMenuItem.Text = "Consulta individual";
+            this.consultaIndividualToolStripMenuItem.Click += new System.EventHandler(this.consultaIndividualToolStripMenuItem_Click);
             // 
             // alimentosToolStripMenuItem
             // 
@@ -100,6 +101,21 @@
             this.alimentosToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.alimentosToolStripMenuItem.Text = "Alimentos";
             this.alimentosToolStripMenuItem.Click += new System.EventHandler(this.alimentosToolStripMenuItem_Click);
+            // 
+            // planAlimenticioToolStripMenuItem
+            // 
+            this.planAlimenticioToolStripMenuItem.Name = "planAlimenticioToolStripMenuItem";
+            this.planAlimenticioToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
+            this.planAlimenticioToolStripMenuItem.Text = "Plan alimenticio";
+            this.planAlimenticioToolStripMenuItem.Click += new System.EventHandler(this.planAlimenticioToolStripMenuItem_Click);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Controls.Add(this.pictureBox1);
+            this.panelContainer.Location = new System.Drawing.Point(27, 106);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(815, 486);
+            this.panelContainer.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -112,13 +128,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // consultaIndividualToolStripMenuItem
-            // 
-            this.consultaIndividualToolStripMenuItem.Name = "consultaIndividualToolStripMenuItem";
-            this.consultaIndividualToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.consultaIndividualToolStripMenuItem.Text = "Consulta individual";
-            this.consultaIndividualToolStripMenuItem.Click += new System.EventHandler(this.consultaIndividualToolStripMenuItem_Click);
-            // 
             // MenuNutriologo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,7 +138,7 @@
             this.MaximizeBox = false;
             this.Name = "MenuNutriologo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuNutriologo";
+            this.Text = "Menú de Nutriólogo";
             this.Load += new System.EventHandler(this.MenuNutriologo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -152,6 +161,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem alimentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaIndividualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planAlimenticioToolStripMenuItem;
 
     }
 }

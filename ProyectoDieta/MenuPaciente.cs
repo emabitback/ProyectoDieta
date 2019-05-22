@@ -12,8 +12,10 @@ namespace ProyectoDieta
 {
     public partial class MenuPaciente  : MaterialSkin.Controls.MaterialForm
     {
-        public MenuPaciente()
+        string correo;
+        public MenuPaciente(string correo)
         {
+            this.correo = correo;
             InitializeComponent();
         }
 
@@ -34,12 +36,13 @@ namespace ProyectoDieta
         private void MenuPaciente_Load(object sender, EventArgs e)
         {
             ImagenFondo.Visible = true;
+            this.Text = "";
         }
 
         private void miPToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ImagenFondo.Visible = false;
-            OpenForm(new MiPlan());
+            OpenForm(new MiPlan(correo));
             
         }
     }

@@ -34,8 +34,8 @@
             this.miPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.ImagenFondo = new System.Windows.Forms.PictureBox();
             this.encabezado = new MaterialSkin.Controls.MaterialLabel();
+            this.ImagenFondo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelContainer.SuspendLayout();
@@ -72,14 +72,14 @@
             // miPToolStripMenuItem
             // 
             this.miPToolStripMenuItem.Name = "miPToolStripMenuItem";
-            this.miPToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.miPToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.miPToolStripMenuItem.Text = "Mi Plan";
             this.miPToolStripMenuItem.Click += new System.EventHandler(this.miPToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // panelContainer
@@ -90,6 +90,19 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(815, 486);
             this.panelContainer.TabIndex = 1;
+            // 
+            // encabezado
+            // 
+            this.encabezado.AutoSize = true;
+            this.encabezado.Depth = 0;
+            this.encabezado.Font = new System.Drawing.Font("Roboto", 11F);
+            this.encabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.encabezado.Location = new System.Drawing.Point(311, 22);
+            this.encabezado.MouseState = MaterialSkin.MouseState.HOVER;
+            this.encabezado.Name = "encabezado";
+            this.encabezado.Size = new System.Drawing.Size(73, 19);
+            this.encabezado.TabIndex = 1;
+            this.encabezado.Text = "Consejos";
             // 
             // ImagenFondo
             // 
@@ -102,19 +115,6 @@
             this.ImagenFondo.TabStop = false;
             this.ImagenFondo.Visible = false;
             // 
-            // encabezado
-            // 
-            this.encabezado.AutoSize = true;
-            this.encabezado.Depth = 0;
-            this.encabezado.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.encabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.encabezado.Location = new System.Drawing.Point(311, 22);
-            this.encabezado.MouseState = MaterialSkin.MouseState.HOVER;
-            this.encabezado.Name = "encabezado";
-            this.encabezado.Size = new System.Drawing.Size(145, 40);
-            this.encabezado.TabIndex = 1;
-            this.encabezado.Text = "Consejos";
-            // 
             // MenuPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,7 +126,7 @@
             this.MaximizeBox = false;
             this.Name = "MenuPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuPaciente";
+            this.Text = "Menú de paciente";
             this.Load += new System.EventHandler(this.MenuPaciente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
