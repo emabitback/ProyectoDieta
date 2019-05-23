@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +16,11 @@ namespace ProyectoDieta
 {
     public partial class MiPlan : Form
     {
+<<<<<<< HEAD
         static string cadena_conexion = DatosConexion.cadena;         
+=======
+        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=;database=nutrid; Allow User Variables=True";
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
 
         string correo;
         public MiPlan(string correo)
@@ -76,3 +84,33 @@ namespace ProyectoDieta
         }
     }
 }
+<<<<<<< HEAD
+=======
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ProyectoDieta
+{
+    public partial class MiPlan : Form
+    {
+        public MiPlan()
+        {
+            InitializeComponent();
+        }
+
+        private void MiPlan_Load(object sender, EventArgs e)
+        {
+           
+        }
+    }
+}
+>>>>>>> 82655591fb6cd62a39820d2089d562b892634941
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629

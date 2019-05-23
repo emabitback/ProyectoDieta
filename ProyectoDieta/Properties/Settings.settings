@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles>
@@ -5,3 +9,15 @@
   </Profiles>
   <Settings />
 </SettingsFile>
+<<<<<<< HEAD
+=======
+=======
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>
+>>>>>>> 82655591fb6cd62a39820d2089d562b892634941
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629

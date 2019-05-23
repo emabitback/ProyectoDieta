@@ -30,10 +30,17 @@
         {
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.txt_correo = new MaterialSkin.Controls.MaterialSingleLineTextField();
+<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.txt_respuesta = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btn_recuperar = new MaterialSkin.Controls.MaterialFlatButton();
             this.lbl_pregunta = new System.Windows.Forms.Label();
+=======
+            this.cmb_correos = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
             this.SuspendLayout();
             // 
             // materialFlatButton1
@@ -51,7 +58,10 @@
             this.materialFlatButton1.TabIndex = 5;
             this.materialFlatButton1.Text = "Buscar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
+=======
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
             // 
             // txt_correo
             // 
@@ -68,6 +78,24 @@
             this.txt_correo.TabIndex = 3;
             this.txt_correo.UseSystemPasswordChar = false;
             // 
+<<<<<<< HEAD
+=======
+            // cmb_correos
+            // 
+            this.cmb_correos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_correos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_correos.FormattingEnabled = true;
+            this.cmb_correos.Items.AddRange(new object[] {
+            "--Selecciona una Categoria --",
+            "Frutas y verduras",
+            "Lugiminosas y alimentos de origen animal",
+            "Cerales"});
+            this.cmb_correos.Location = new System.Drawing.Point(82, 145);
+            this.cmb_correos.Name = "cmb_correos";
+            this.cmb_correos.Size = new System.Drawing.Size(200, 28);
+            this.cmb_correos.TabIndex = 29;
+            // 
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
             // label1
             // 
             this.label1.AutoSize = true;
@@ -78,6 +106,7 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Pregunta";
             // 
+<<<<<<< HEAD
             // txt_respuesta
             // 
             this.txt_respuesta.Depth = 0;
@@ -119,6 +148,38 @@
             this.lbl_pregunta.Size = new System.Drawing.Size(18, 20);
             this.lbl_pregunta.TabIndex = 33;
             this.lbl_pregunta.Text = "_";
+=======
+            // materialSingleLineTextField1
+            // 
+            this.materialSingleLineTextField1.Depth = 0;
+            this.materialSingleLineTextField1.Hint = "Respuesta";
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(82, 201);
+            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
+            this.materialSingleLineTextField1.PasswordChar = '\0';
+            this.materialSingleLineTextField1.SelectedText = "";
+            this.materialSingleLineTextField1.SelectionLength = 0;
+            this.materialSingleLineTextField1.SelectionStart = 0;
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(200, 23);
+            this.materialSingleLineTextField1.TabIndex = 31;
+            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            // 
+            // materialFlatButton2
+            // 
+            this.materialFlatButton2.AutoSize = true;
+            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialFlatButton2.Depth = 0;
+            this.materialFlatButton2.Location = new System.Drawing.Point(82, 248);
+            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton2.MaximumSize = new System.Drawing.Size(100, 36);
+            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFlatButton2.Name = "materialFlatButton2";
+            this.materialFlatButton2.Primary = false;
+            this.materialFlatButton2.Size = new System.Drawing.Size(89, 36);
+            this.materialFlatButton2.TabIndex = 32;
+            this.materialFlatButton2.Text = "Recuperar";
+            this.materialFlatButton2.UseVisualStyleBackColor = true;
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
             // 
             // RecuperaContra
             // 
@@ -126,15 +187,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(364, 379);
+<<<<<<< HEAD
             this.Controls.Add(this.lbl_pregunta);
             this.Controls.Add(this.btn_recuperar);
             this.Controls.Add(this.txt_respuesta);
             this.Controls.Add(this.label1);
+=======
+            this.Controls.Add(this.materialFlatButton2);
+            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmb_correos);
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.txt_correo);
             this.Name = "RecuperaContra";
             this.Text = "Recuperar contraseña";
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.RecuperaContra_Load);
+=======
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,9 +215,16 @@
 
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txt_correo;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txt_respuesta;
         private MaterialSkin.Controls.MaterialFlatButton btn_recuperar;
         private System.Windows.Forms.Label lbl_pregunta;
+=======
+        private System.Windows.Forms.ComboBox cmb_correos;
+        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
     }
 }

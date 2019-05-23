@@ -7,17 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using MySql.Data.MySqlClient;
+=======
+
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
 namespace ProyectoDieta
 {
     public partial class RecuperaContra : Form
     {
+<<<<<<< HEAD
         static string cadena_conexion = DatosConexion.cadena;         
 
+=======
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
         public RecuperaContra()
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
@@ -90,5 +98,7 @@ namespace ProyectoDieta
         {
 
         }
+=======
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
     }
 }

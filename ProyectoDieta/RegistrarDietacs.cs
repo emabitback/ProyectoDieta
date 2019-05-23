@@ -12,7 +12,11 @@ namespace ProyectoDieta
 {
     public partial class RegistrarDietacs : Form
     {
+<<<<<<< HEAD
         static string cadena_conexion = DatosConexion.cadena;         
+=======
+        const string cadena_conexion = "server=localhost;port=3306;user id=root;password=;database=nutrid; Allow User Variables=True";
+>>>>>>> 65e950c64ff1958f1166e20f11d42b32b82d3629
 
         public RegistrarDietacs()
         {
