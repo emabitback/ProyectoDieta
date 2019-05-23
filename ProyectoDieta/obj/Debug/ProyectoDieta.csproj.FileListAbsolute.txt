@@ -1,0 +1,79 @@
+c:\users\ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.pdb
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\MaterialSkin.dll
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csprojResolveAssemblyReference.cache
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Form1.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.exe
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.AltaPaciente.resources
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.exe
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\bin\Debug\ProyectoDieta.exe
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\bin\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\bin\Debug\MaterialSkin.dll
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.AltaPaciente.resources
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.Form1.resources
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+C:\Users\abraham\Downloads\ProyectoDieta-master\ProyectoDieta-master\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\bin\Debug\MySql.Data.dll
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuPaciente.resources
+C:\Users\Ema\documents\visual studio 2013\Projects\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MiPlan.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.exe
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\bin\Debug\MaterialSkin.dll
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csprojResolveAssemblyReference.cache
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.AltaPaciente.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Form1.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuPaciente.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MiPlan.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
+C:\Users\abraham\Trabajos\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.exe
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\bin\Debug\ProyectoDieta.exe
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\bin\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\bin\Debug\MaterialSkin.dll
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.AltaPaciente.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.Form1.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.MenuPaciente.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.MiPlan.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.ListaPacientes.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.ConsultaIndividual.resources
+C:\Users\abraham\Desktop\aqui\ProyectoDieta\obj\Debug\ProyectoDieta.csprojResolveAssemblyReference.cache
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe.config
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.exe
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.exe
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\bin\Debug\ProyectoDieta.pdb
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\bin\Debug\MaterialSkin.dll
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.form.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.AltaPaciente.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.ConsultaIndividual.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Form1.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.ListaPacientes.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuNutriologo.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MenuPaciente.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.MiPlan.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.Properties.Resources.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.RegistrarDietacs.resources
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csproj.GenerateResource.Cache
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.csprojResolveAssemblyReference.cache
+C:\Users\abraham\Desktop\ProyectoDieta\ProyectoDieta\obj\Debug\ProyectoDieta.RecuperaContra.resources
