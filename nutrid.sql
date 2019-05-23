@@ -1,109 +1,78 @@
--- phpMyAdmin SQL Dump
--- version 4.8.4
--- https://www.phpmyadmin.net/
+-- MySQL dump 10.13  Distrib 5.5.61, for Win64 (AMD64)
 --
--- Servidor: 127.0.0.1:3306
--- Tiempo de generaciÃ³n: 23-05-2019 a las 06:22:07
--- VersiÃ³n del servidor: 5.7.24
--- VersiÃ³n de PHP: 7.2.14
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
+-- Host: localhost    Database: nutrid
+-- ------------------------------------------------------
+-- Server version	5.5.61
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Base de datos: `nutrid`
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `comidas`
+-- Table structure for table `comidas`
 --
 
 DROP TABLE IF EXISTS `comidas`;
-CREATE TABLE IF NOT EXISTS `comidas` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `comidas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `comida` varchar(50) NOT NULL,
   `categoria` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `comidas`
+-- Dumping data for table `comidas`
 --
 
-INSERT INTO `comidas` (`id`, `comida`, `categoria`) VALUES
-(1, 'frutas secaas', 'frutas'),
-(2, 'fruta del pan', 'frutas'),
-(13, 'plÃ¡tano', 'frutas'),
-(4, 'frijoles', 'leguminosas'),
-(5, 'trigo', 'cereales'),
-(6, 'cereal kellogs', 'cereales'),
-(7, 'cereal choco kripis', 'cereales'),
-(8, 'sandÃ­a', 'frutas'),
-(9, 'ser', 'leguminosas'),
-(10, 'manzana', 'frutas'),
-(11, 'res', 'leguminosas'),
-(12, 'granola', 'cereales'),
-(14, 'atÃºn', 'leguminosas'),
-(15, 'tacos', 'leguminosas');
-
--- --------------------------------------------------------
+LOCK TABLES `comidas` WRITE;
+/*!40000 ALTER TABLE `comidas` DISABLE KEYS */;
+INSERT INTO `comidas` VALUES (1,'frutas secaas','frutas'),(2,'fruta del pan','frutas'),(13,'plÃ¡tano','frutas'),(4,'frijoles','leguminosas'),(5,'trigo','cereales'),(6,'cereal kellogs','cereales'),(7,'cereal choco kripis','cereales'),(8,'sandÃ­a','frutas'),(9,'ser','leguminosas'),(10,'manzana','frutas'),(11,'res','leguminosas'),(12,'granola','cereales'),(14,'atÃºn','leguminosas'),(15,'tacos','leguminosas'),(16,'fresa','frutas'),(17,'brocoli','frutas'),(18,'pera','frutas'),(19,'pepino','frutas'),(20,'kiwi','frutas'),(21,'rabano','frutas'),(22,'linaza','cereales');
+/*!40000 ALTER TABLE `comidas` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `dieta`
+-- Table structure for table `dieta`
 --
 
 DROP TABLE IF EXISTS `dieta`;
-CREATE TABLE IF NOT EXISTS `dieta` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dieta` (
   `correo` varchar(70) NOT NULL,
   `dia` varchar(70) NOT NULL,
   `comida` varchar(70) NOT NULL,
   PRIMARY KEY (`correo`,`dia`,`comida`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `dieta`
+-- Dumping data for table `dieta`
 --
 
-INSERT INTO `dieta` (`correo`, `dia`, `comida`) VALUES
-('ddanielhdz@gmail.com', 'Jueves', 'frijoles'),
-('ddanielhdz@gmail.com', 'Jueves', 'frutas secaas'),
-('ddanielhdz@gmail.com', 'Jueves', 'ser'),
-('ddanielhdz@gmail.com', 'Lunes', 'fruta del pan'),
-('ddanielhdz@gmail.com', 'Lunes', 'frutas secaas'),
-('ddanielhdz@gmail.com', 'Lunes', 'manzana'),
-('ddanielhdz@gmail.com', 'Martes', ''),
-('ddanielhdz@gmail.com', 'Martes', 'frijoles'),
-('ddanielhdz@gmail.com', 'Martes', 'ser'),
-('derefer@fere', 'Lunes', 'manzana'),
-('valv', 'Jueves', 'res'),
-('valv', 'Lunes', 'frijoles'),
-('valv', 'Lunes', 'ser'),
-('valv', 'Martes', 'ser'),
-('valv', 'MiÃ©rcoles', 'res'),
-('valv', 'SÃ¡bado', 'frijoles'),
-('valv', 'SÃ¡bado', 'frutas secaas'),
-('valv', 'Viernes', 'atÃºn'),
-('valv', 'Viernes', 'frutas secaas'),
-('valv', 'Viernes', 'res');
-
--- --------------------------------------------------------
+LOCK TABLES `dieta` WRITE;
+/*!40000 ALTER TABLE `dieta` DISABLE KEYS */;
+INSERT INTO `dieta` VALUES ('adrian@gmail.com','Lunes','fresa'),('adrian@gmail.com','Martes','res'),('ddanielhdz@gmail.com','Jueves','frijoles'),('ddanielhdz@gmail.com','Jueves','frutas secaas'),('ddanielhdz@gmail.com','Jueves','ser'),('ddanielhdz@gmail.com','Lunes','cereal kellogs'),('ddanielhdz@gmail.com','Lunes','fruta del pan'),('ddanielhdz@gmail.com','Lunes','frutas secaas'),('ddanielhdz@gmail.com','Lunes','manzana'),('ddanielhdz@gmail.com','Martes',''),('ddanielhdz@gmail.com','Martes','frijoles'),('ddanielhdz@gmail.com','Martes','ser'),('derefer@fere','Lunes','manzana'),('emanuel_ramirez123@hotmail.com','Lunes','frijoles'),('emanuel_ramirez123@hotmail.com','Lunes','sandÃ­a'),('emanuel_ramirez123@hotmail.com','MiÃ©rcoles','cereal choco kripis'),('emanuel_ramirez123@hotmail.com','Viernes','atÃºn'),('emanuel_ramirez123@hotmail.com','Viernes','frutas secaas'),('emanuel_ramirez123@hotmail.com','Viernes','trigo'),('valv','Jueves','res'),('valv','Lunes','frijoles'),('valv','Lunes','ser'),('valv','Martes','ser'),('valv','MiÃ©rcoles','res'),('valv','SÃ¡bado','frijoles'),('valv','SÃ¡bado','frutas secaas'),('valv','Viernes','atÃºn'),('valv','Viernes','frutas secaas'),('valv','Viernes','res');
+/*!40000 ALTER TABLE `dieta` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `usrs_data`
+-- Table structure for table `usrs_data`
 --
 
 DROP TABLE IF EXISTS `usrs_data`;
-CREATE TABLE IF NOT EXISTS `usrs_data` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usrs_data` (
   `correo` varchar(50) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apep` varchar(30) NOT NULL,
@@ -117,24 +86,26 @@ CREATE TABLE IF NOT EXISTS `usrs_data` (
   `alergias` varchar(80) NOT NULL,
   PRIMARY KEY (`correo`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `usrs_data`
+-- Dumping data for table `usrs_data`
 --
 
-INSERT INTO `usrs_data` (`correo`, `nombre`, `apep`, `apem`, `telefono`, `nacimiento`, `direccion`, `sexo`, `peso`, `altura`, `alergias`) VALUES
-('derefer@fere', 'fffafa', 'fifi', 'val', '23232', '1222', 'aca', 'Masculino', 12, '12', '34'),
-('valv', 'brah', 'va', 'va', '3232', '1111', 'aca', 'Masculino', 122, '12', '12'),
-('ddanielhdz@gmail.com', 'alisson', 'valverde', 'hernandez', '7778989', '1990', 'Calle Galaxias No. 19', 'Femenino', 70, '78', '2');
-
--- --------------------------------------------------------
+LOCK TABLES `usrs_data` WRITE;
+/*!40000 ALTER TABLE `usrs_data` DISABLE KEYS */;
+INSERT INTO `usrs_data` VALUES ('derefer@fere','fffafa','fifi','val','23232','1222','aca','Masculino',12,12,'34'),('valv','brah','va','va','3232','1111','aca','Masculino',122,12,'12'),('ddanielhdz@gmail.com','alisson','valverde','hernandez','7778989','1990','Calle Galaxias No. 19','Femenino',70,78,'2'),('adrian@gmail.com','adrian','sanchez','cortina','7774945574','2000','tu corazon','Masculino',70,2,'hola'),('emanuel_ramirez123@hotmail.com','Emanuel','Ramirez','Munoz','7774462087','0','tu corazon','Masculino',200,3,'a la penicilina y a el amor');
+/*!40000 ALTER TABLE `usrs_data` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `usrs_login`
+-- Table structure for table `usrs_login`
 --
 
 DROP TABLE IF EXISTS `usrs_login`;
-CREATE TABLE IF NOT EXISTS `usrs_login` (
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usrs_login` (
   `correo` varchar(50) NOT NULL,
   `psw` blob NOT NULL,
   `rol` char(3) NOT NULL,
@@ -142,20 +113,25 @@ CREATE TABLE IF NOT EXISTS `usrs_login` (
   `respuesta` varchar(30) NOT NULL,
   PRIMARY KEY (`correo`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `usrs_login`
+-- Dumping data for table `usrs_login`
 --
 
-INSERT INTO `usrs_login` (`correo`, `psw`, `rol`, `pregunta`, `respuesta`) VALUES
-('valv', 0x08b65b1fd1a73c82d8965d26e4e60d3a, 'USR', 'Â¿CuÃ¡l fue tu primer nÃºmero?', '123'),
-('ddanielhdz@gmail.com', 0xdb4dc03e610f09ec35502c6cfb082748, 'USR', 'Â¿CuÃ¡l fue tu primer nÃºmero?', 'Respuesta'),
-('derefer@fere', 0xe55856ad234989761cf85ec2ada9144d, 'USR', 'Â¿CuÃ¡l fue tu primer nÃºmero?', '123'),
-('jarek@mail.com', 0x6c3f65c7e937f2f968236baa9c590b55, 'ADM', 'Comida favorita', 'frijoles'),
-('ddanielhdz@mail.com', 0x4e1032de32afccf1422cea9ba792d091, 'USR', 'Comida favorita', 'Respuesta'),
-('ddanielhdz@cgmail.com', 0x4e1032de32afccf1422cea9ba792d091, 'USR', 'Comida favorita', 'Respuesta');
-COMMIT;
+LOCK TABLES `usrs_login` WRITE;
+/*!40000 ALTER TABLE `usrs_login` DISABLE KEYS */;
+INSERT INTO `usrs_login` VALUES ('valv','¶[Ñ§<‚Ø–]&äæ\r:','USR','Â¿CuÃ¡l fue tu primer nÃºmero?','123'),('ddanielhdz@gmail.com','ÛMÀ>a	ì5P,lû\'H','USR','Â¿CuÃ¡l fue tu primer nÃºmero?','Respuesta'),('derefer@fere','åXV­#I‰vø^Â­©M','USR','Â¿CuÃ¡l fue tu primer nÃºmero?','123'),('jarek@mail.com','l?eÇé7òùh#kªœYU','ADM','Comida favorita','frijoles'),('ddanielhdz@mail.com','N2Þ2¯ÌñB,ê›§’Ð‘','USR','Comida favorita','Respuesta'),('ddanielhdz@cgmail.com','N2Þ2¯ÌñB,ê›§’Ð‘','USR','Comida favorita','Respuesta'),('','N2Þ2¯ÌñB,ê›§’Ð‘','USR','Comida favorita','Respuesta'),('adrian@gmail.com','kÈÓ{ã¯¡	ÆéŸc›šZ','USR','Â¿Nombre de tu mascota?','Respuesta'),('emanuelramire','N2Þ2¯ÌñB,ê›§’Ð‘','USR','Â¿CuÃ¡l fue tu primer nÃºmero?','Respuesta'),('emanuel_ramirez123@hotmail.com','=/ªè\"¢P¬äS?l[À','USR','Comida favorita','baloncesto');
+/*!40000 ALTER TABLE `usrs_login` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-05-23  8:44:59
