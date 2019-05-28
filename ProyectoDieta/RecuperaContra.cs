@@ -12,7 +12,7 @@ namespace ProyectoDieta
 {
     public partial class RecuperaContra : MaterialSkin.Controls.MaterialForm
     {
-        static string cadena_conexion = DatosConexion.cadena;         
+        static string cadena_conexion = DatosConexion.cadenaEma;         
 
         public RecuperaContra()
         {

@@ -254,6 +254,7 @@
             this.txt_sexo.Size = new System.Drawing.Size(108, 23);
             this.txt_sexo.TabIndex = 16;
             this.txt_sexo.UseSystemPasswordChar = false;
+            this.txt_sexo.Click += new System.EventHandler(this.txt_sexo_Click);
             // 
             // txt_direccion
             // 

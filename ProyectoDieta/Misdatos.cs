@@ -76,5 +76,10 @@ namespace ProyectoDieta
         {
 
         }
+
+        private void txt_sexo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

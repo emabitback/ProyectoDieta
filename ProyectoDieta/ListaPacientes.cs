@@ -13,7 +13,7 @@ namespace ProyectoDieta
 {
     public partial class ListaPacientes : Form
     {
-        static string cadena_conexion = DatosConexion.cadena;
+        static string cadena_conexion = DatosConexion.cadenaEma;
         public ListaPacientes()
         {
             InitializeComponent();

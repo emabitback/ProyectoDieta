@@ -14,7 +14,7 @@ namespace ProyectoDieta
     public partial class AltaPaciente : Form
     {
        
-        static string cadena_conexion = DatosConexion.cadena;
+        static string cadena_conexion = DatosConexion.cadenaEma;
         public AltaPaciente()
         {
 
@@ -115,7 +115,7 @@ namespace ProyectoDieta
                     
                 }
             
-            else { MessageBox.Show("Llena Todos los putos campos Pendejjo"); }
+            else { MessageBox.Show("Llena Todos los campos"); }
       }
 
         private void AltaPaciente_Load(object sender, EventArgs e)

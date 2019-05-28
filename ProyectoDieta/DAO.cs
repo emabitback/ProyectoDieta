@@ -28,7 +28,7 @@ namespace ProyectoDieta
                 conexion.Open();
                 String clave = pregunta + respuesta;
 
-                comand = new MySqlCommand("insert into Usuarios(correo,psw,rol,nombre_completo,telefono," +
+                comand = new MySqlCommand("insert into usuarios(correo,psw,rol,nombre_completo,telefono," +
                      "anio_nacimiento,direccion,sexo,peso,altura,alergias,pregunta,respuesta)" +
                 "values(?correo,aes_encrypt(?psw, ?clave),?rol,?nombre,?telefono,?anio_nacimiento," +
                       " ?direccion,?sexo,?peso,?altura,?alergias,?pregunta,?respuesta)"

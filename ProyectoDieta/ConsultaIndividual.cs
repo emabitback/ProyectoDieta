@@ -69,7 +69,7 @@ namespace ProyectoDieta
             conexion.ConnectionString = cadena_conexion;
             MySqlCommand comd = new MySqlCommand
              ("select nombre_completo,telefono,anio_nacimiento,direccion,sexo,peso,altura,alergias"+
-                 " from Usuarios WHERE correo=?correo",conexion);
+                 " from usuarios WHERE correo=?correo",conexion);
             comd.Parameters.AddWithValue("?correo",cmb_correos.SelectedItem.ToString());
             try
             {
