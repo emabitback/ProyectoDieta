@@ -60,10 +60,10 @@
             this.txt_psw = new System.Windows.Forms.TextBox();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.combo_tipoUsuario = new System.Windows.Forms.ComboBox();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.combo_tipoUsuario = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -107,12 +107,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(566, 393);
+            this.button1.Location = new System.Drawing.Point(566, 374);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 35);
+            this.button1.Size = new System.Drawing.Size(118, 54);
             this.button1.TabIndex = 18;
             this.button1.Text = "Agregar Paciente";
             this.button1.UseVisualStyleBackColor = false;
@@ -328,12 +328,12 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Turquoise;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(566, 445);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 31);
+            this.button2.Size = new System.Drawing.Size(118, 50);
             this.button2.TabIndex = 19;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = false;
@@ -450,6 +450,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos para Acceso";
             // 
+            // combo_tipoUsuario
+            // 
+            this.combo_tipoUsuario.FormattingEnabled = true;
+            this.combo_tipoUsuario.Items.AddRange(new object[] {
+            "Paciente",
+            "Admin"});
+            this.combo_tipoUsuario.Location = new System.Drawing.Point(131, 93);
+            this.combo_tipoUsuario.Name = "combo_tipoUsuario";
+            this.combo_tipoUsuario.Size = new System.Drawing.Size(147, 21);
+            this.combo_tipoUsuario.TabIndex = 30;
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel12.Location = new System.Drawing.Point(10, 98);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(115, 19);
+            this.materialLabel12.TabIndex = 29;
+            this.materialLabel12.Text = "Tipo de Usuario";
+            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Gainsboro;
@@ -486,30 +510,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos Personales";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
-            // 
-            // materialLabel12
-            // 
-            this.materialLabel12.AutoSize = true;
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel12.Location = new System.Drawing.Point(10, 98);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Size = new System.Drawing.Size(115, 19);
-            this.materialLabel12.TabIndex = 29;
-            this.materialLabel12.Text = "Tipo de Usuario";
-            // 
-            // combo_tipoUsuario
-            // 
-            this.combo_tipoUsuario.FormattingEnabled = true;
-            this.combo_tipoUsuario.Items.AddRange(new object[] {
-            "Paciente",
-            "Admin"});
-            this.combo_tipoUsuario.Location = new System.Drawing.Point(131, 93);
-            this.combo_tipoUsuario.Name = "combo_tipoUsuario";
-            this.combo_tipoUsuario.Size = new System.Drawing.Size(147, 21);
-            this.combo_tipoUsuario.TabIndex = 30;
             // 
             // AltaPaciente
             // 

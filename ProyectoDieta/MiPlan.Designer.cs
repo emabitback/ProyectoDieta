@@ -96,6 +96,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.materialLabel6);
             this.groupBox1.Controls.Add(this.materialLabel5);
             this.groupBox1.Controls.Add(this.materialLabel4);
@@ -195,20 +196,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(705, 255);
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(549, 396);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 33);
+            this.button1.Size = new System.Drawing.Size(92, 49);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Generar Pdf";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Generar\r\nPDF\r\n";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MiPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 530);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(702, 530);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MiPlan";

@@ -23,6 +23,7 @@ namespace ProyectoDieta
             this.correo = correo;
             InitializeComponent();
         }
+        
 
         private void MiPlan_Load(object sender, EventArgs e)
         {
@@ -123,7 +124,8 @@ namespace ProyectoDieta
                 Sabado += iteem.ToString() + "\n";
 
             }
-
+            String nombre = DAO.buscarNombre(this.correo);
+           
 
             Document doc = new Document();
 
@@ -134,14 +136,21 @@ namespace ProyectoDieta
 
             PdfPCell celda_nombrePaciente = new PdfPCell(new Paragraph("Nombre del Paciente"));
             celda_nombrePaciente.Border = 0;
-            PdfPCell celda_nombrePaciente2 = new PdfPCell(new Paragraph("---------"));
-            celda_nombrePaciente2.Colspan = 2;
-            celda_nombrePaciente2.Border = 0;
+
+            
+            
+                PdfPCell  celda_nombrePaciente2 = new PdfPCell(new Paragraph(nombre));
+                celda_nombrePaciente2.Colspan = 2;
+                celda_nombrePaciente2.Border = 0;
+            
+           
 
 
 
             PdfPCell celda_fecha = new PdfPCell(new Paragraph("Fecha"));
-            PdfPCell celda_fecha2 = new PdfPCell(new Paragraph("---------"));
+            DateTime thisDay = DateTime.Today;
+            
+            PdfPCell celda_fecha2 = new PdfPCell(new Paragraph(thisDay.ToShortDateString()));
             celda_fecha2.Colspan = 2;
             celda_fecha.Border = 0;
             celda_fecha2.Border = 0;

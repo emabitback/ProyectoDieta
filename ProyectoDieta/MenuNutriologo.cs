@@ -23,13 +23,14 @@ namespace ProyectoDieta
 
         }
  
-     /*   private void MenuNutriologo_Closing(Object sender, CancelEventArgs e)
+      /* private void MenuNutriologo_Closing(Object sender, CancelEventArgs e)
         {
             e.Cancel = false;
             Application.Exit();
 
         }
-      */
+       */
+     
         private void OpenForm(object formHijo){
             if (this.panelContainer.Controls.Count > 0)
                 this.panelContainer.Controls.RemoveAt(0);
@@ -83,6 +84,15 @@ namespace ProyectoDieta
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           Application.Exit();
+           // this.Close();
+           
+          //  this.Dispose();
+        }
+
+        private void MenuNutriologo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
             Application.Exit();
         }
     }

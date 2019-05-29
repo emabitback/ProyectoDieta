@@ -54,9 +54,10 @@ namespace ProyectoDieta
             string categoria_recibida;
 
 
-            if (cmb_categoria.SelectedIndex == 0)
+            if (txt_comida.Text == "" || cmb_categoria.SelectedIndex == 0)
+
             {
-                MessageBox.Show("Selecciona una categororia");
+                MessageBox.Show("Ingresa el nombre del alimento y Selecciona una Categoria");
             }
             else
             {

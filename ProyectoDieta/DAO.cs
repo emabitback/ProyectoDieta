@@ -171,12 +171,42 @@ namespace ProyectoDieta
             }
            
         }
-    }
+
+        public static String buscarNombre(String correo)
+        {
+
+            MySqlConnection conexion = new MySqlConnection();
+            conexion.ConnectionString = cadena_conexion;
+            String nombre = "";
+            MySqlCommand Comando_nombre= new MySqlCommand("SELECT nombre_completo from Usuarios "+
+                                    "where correo=?correo", conexion);
+            Comando_nombre.Parameters.AddWithValue("?correo",correo);
+           
+            try
+            {
+                conexion.Open();
+                MySqlDataReader lector = Comando_nombre.ExecuteReader();
+                lector.Read();
+                if (lector.HasRows)
+                {
+                    nombre= lector[0].ToString();
+                }
+                return nombre;
+            }
+            catch (Exception err)
+            {
+                //MessageBox.Show("Se ha producido un error" + err + ".");
+                return nombre;
+            }
+           
+        }
 
 
 
-   
 
+
+
+    } // fin de la clase
 
 } // fin de NameSpace               
         

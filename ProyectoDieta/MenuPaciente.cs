@@ -32,6 +32,13 @@ namespace ProyectoDieta
             fh.Show();
 
         }
+        private void MenuPaciente_Closing(Object sender, CancelEventArgs e)
+        {
+            e.Cancel = false;
+            Application.Exit();
+
+        }
+        
 
         private void MenuPaciente_Load(object sender, EventArgs e)
         {
@@ -55,6 +62,12 @@ namespace ProyectoDieta
         {
             ImagenFondo.Visible = false;
             OpenForm(new Misdatos(correo));
+        }
+
+        private void MenuPaciente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+            Application.Exit();
         }
     }
 }

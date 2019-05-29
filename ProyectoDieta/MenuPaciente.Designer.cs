@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPaciente));
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.miDietaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.misDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.encabezado = new MaterialSkin.Controls.MaterialLabel();
             this.ImagenFondo = new System.Windows.Forms.PictureBox();
-            this.misDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelContainer.SuspendLayout();
@@ -75,7 +76,7 @@
             // 
             this.miPToolStripMenuItem.Image = global::ProyectoDieta.Properties.Resources.consulta;
             this.miPToolStripMenuItem.Name = "miPToolStripMenuItem";
-            this.miPToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.miPToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.miPToolStripMenuItem.Text = "Mi Plan";
             this.miPToolStripMenuItem.Click += new System.EventHandler(this.miPToolStripMenuItem_Click);
             // 
@@ -83,9 +84,16 @@
             // 
             this.salirToolStripMenuItem.Image = global::ProyectoDieta.Properties.Resources.x;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // misDatosToolStripMenuItem
+            // 
+            this.misDatosToolStripMenuItem.Name = "misDatosToolStripMenuItem";
+            this.misDatosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.misDatosToolStripMenuItem.Text = "Mis Datos ";
+            this.misDatosToolStripMenuItem.Click += new System.EventHandler(this.misDatosToolStripMenuItem_Click);
             // 
             // panelContainer
             // 
@@ -120,13 +128,6 @@
             this.ImagenFondo.TabStop = false;
             this.ImagenFondo.Visible = false;
             // 
-            // misDatosToolStripMenuItem
-            // 
-            this.misDatosToolStripMenuItem.Name = "misDatosToolStripMenuItem";
-            this.misDatosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.misDatosToolStripMenuItem.Text = "Mis Datos ";
-            this.misDatosToolStripMenuItem.Click += new System.EventHandler(this.misDatosToolStripMenuItem_Click);
-            // 
             // MenuPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,11 +135,13 @@
             this.ClientSize = new System.Drawing.Size(874, 604);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "MenuPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú de paciente";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPaciente_FormClosing);
             this.Load += new System.EventHandler(this.MenuPaciente_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

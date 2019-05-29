@@ -20,9 +20,13 @@ namespace ProyectoDieta
 
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
-            if (txt_correo.Text == "" && txt_pws.Text == "")
+
+
+            if ((txt_correo.Text == "" && txt_pws.Text == "")
+                        || txt_pws.Text == "" || txt_correo.Text=="") 
             {
-                MessageBox.Show("hay campos vacios favor de verificar");
+                
+                MessageBox.Show("Introduzca sus datos en los campos faltantes. \n", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -52,22 +56,32 @@ namespace ProyectoDieta
                         {
                             MenuNutriologo mn = new MenuNutriologo();
                             mn.Show();
+                            this.Hide();
                             txt_correo.Clear();
                             txt_pws.Clear();
+
                         }
                         else
                         {
                             MenuPaciente mp = new MenuPaciente(email);
                             mp.Show();
+                            this.Hide();
                             txt_correo.Clear();
                             txt_pws.Clear();
+                            
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("Su email o su contraseña no es correcta \n","Verificar",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    }
+
                     
                 }
                 catch (Exception er)
                 {
-                    MessageBox.Show("Problemas al Inicar sesion  \n" + er);
+                    //MessageBox.Show("Problemas al Inicar sesion  \n" + er);
+                    MessageBox.Show("Problemas al Iniciar sesión \n", "Ups !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                    
             }
